@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/ey_white_logo_login"
+
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ey_white_logo"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="50dp"
+        android:transitionName="logo_image"
+
+        />
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="325dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="Email"
+        android:drawablePadding="5dp"
+        android:paddingStart="12dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"
+        android:textSize="17sp" />
+
+    <EditText
+
+        android:id="@+id/loginPassword"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_pswd_login"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/submitLogin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_submit_button"
+
+        android:paddingTop="5dp"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/goToRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="New User? Sign Up"
+        android:background="#00000000"
+        />
+
+
+
+
+
+
+
+
+</LinearLayout>

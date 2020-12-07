@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.Frag1"
+    android:background="@drawable/frag1_design"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Leadership Address"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="All videos and presentation content will be presented in an interactive AR manner as shown in the task here. \nOrganisation Introduction etc, all can be made into such AR content."
+            android:textColor="#0c3d5e"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/circularTextView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circular_button"
+            android:text="20"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/doTheTask"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+
+            android:gravity="center"
+            android:text="START"
+            app:backgroundTint="#474a56"
+            app:cornerRadius="10dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

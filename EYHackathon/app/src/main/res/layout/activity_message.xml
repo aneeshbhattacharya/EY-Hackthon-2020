@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buddy_pairing_bg"
+    android:paddingTop="0dp"
+    tools:context=".MessageActivity">
+
+
+
+    <EditText
+        android:id="@+id/text_input"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+
+
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_input"
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_send"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <ImageButton
+        android:id="@+id/btn_send"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/ic_send_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_input"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="00dp"
+        android:layout_marginBottom="90dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

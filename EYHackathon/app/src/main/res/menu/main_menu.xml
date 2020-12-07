@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/goToHome"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/goToLeaderboard"
+            android:icon="@drawable/ic_leaderboard"
+            android:title="Leaderboard" />
+        <item
+            android:id="@+id/goToTasks"
+            android:icon="@drawable/ic_task"
+            android:title="Tasks" />
+
+        <item
+            android:id="@+id/goToBuddy"
+            android:icon="@drawable/ic_buddy"
+            android:title="Buddy Pairing" />
+        <item
+            android:id="@+id/goToCourses"
+            android:icon="@drawable/ic_course"
+            android:title="Course" />
+
+        <item
+            android:id="@+id/goToFloorMap"
+            android:icon="@drawable/ic_floormap"
+            android:title="Floor Map" />
+    </group>
+
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/goToLogout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout" />
+            </group>
+
+        </menu>
+
+
+    </item>
+
+
+</menu>
